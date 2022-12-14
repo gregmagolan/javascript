@@ -21,7 +21,7 @@
     "format": "prettier --loglevel error --write \"./src/**/*.ts\"",
     "lint": "tslint --project \".\" && prettier --check \"./src/**/*.ts\" && tslint --project \"./examples/typescript\"",
     "clean": "rm -Rf node_modules/ dist/",
-    "build": "tsc",
+    "build": "which tsc && tsc --version && tsc",
     "generate": "./generate-client.sh",
     "watch": "tsc --watch",
     "test": "nyc mocha",
